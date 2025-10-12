@@ -56,7 +56,7 @@ messages = [{"role": "system", "content": "You are a supportive mental health as
 
 entry = tk.Entry(root, width=60)
 entry.pack(pady=5)
-entry.bind("<Return>", on_send)  # Allow pressing Enter to send
+entry.bind("<Return>", on_send)
 
 send_button = tk.Button(root, text="Send", command=on_send)
 send_button.pack()
