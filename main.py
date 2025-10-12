@@ -2,9 +2,10 @@ import tkinter as tk
 from tkinter import scrolledtext
 import openai
 import webbrowser
+from dotenv import load_dotenv
 import os
-
-client = openai.OpenAI(api_key=os.getenv("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"))
+load_dotenv()  # This loads .env automatically
+client = openai.OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 def get_safety_resource(message):
     distress_keywords = ["suicide", "self-harm", "hopeless", "can't go on", "want to die", "don't want to live"]
