@@ -61,6 +61,6 @@ entry.bind("<Return>", on_send)  # Allow pressing Enter to send
 send_button = tk.Button(root, text="Send", command=on_send)
 send_button.pack()
 
-entry.focus_set()  # focus input field for typing
+entry.focus_set()
 
 root.mainloop()
