@@ -4,7 +4,7 @@ import openai
 import webbrowser
 from dotenv import load_dotenv
 import os
-load_dotenv()  # This loads .env automatically
+load_dotenv()
 client = openai.OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 def get_safety_resource(message):
@@ -24,7 +24,7 @@ def chat_with_openai(messages):
     )
     return response.choices[0].message.content
 
-def on_send(event=None):  # event arg for Enter key
+def on_send(event=None):
     user_message = entry.get()
     if not user_message.strip():
         return
