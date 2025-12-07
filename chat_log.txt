@@ -1,4 +1,0 @@
-User: hello, im having a hard time
-Bot: I'm here to help. Can you tell me a little more about what's going on and how you're feeling?
-User: hi im having a hard time
-Bot: I'm sorry to hear that you're having a hard time. It's okay to not be okay sometimes. Would you like to talk about what's been bothering you? I'm here to listen and offer support.
